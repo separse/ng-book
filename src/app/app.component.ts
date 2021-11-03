@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<app-youtube></app-youtube>',
 })
 export class AppComponent {
-  title = 'webgod-task';
+  title = 'youtube-search-task';
 }
