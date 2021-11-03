@@ -11,6 +11,16 @@ import { YoutubeComponent } from './youtube-task-2/components/youtube.component'
 import { SearchComponent } from './youtube-task-2/components/search.component';
 import { CardsComponent } from './youtube-task-2/components/cards.component';
 import { ApiService } from './youtube-task-2/api.service';
+import { TrackSearchComponent } from './tarck-task/track-search/track-search.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './tarck-task/home.component';
+import { AboutComponent } from './tarck-task/about.component';
+import { ContractComponent } from './tarck-task/contract.component';
+import { LoginComponent } from './tarck-task/login/login.component';
+import { ProtectedComponent } from './tarck-task/protected.component';
+import { ProductsComponent } from './tarck-task/products/products.component';
+import { ProductComponent } from './tarck-task/product/product.component';
+import { TrackComponent } from './tarck-task/track/track.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +31,20 @@ import { ApiService } from './youtube-task-2/api.service';
     YoutubeComponent,
     SearchComponent,
     CardsComponent,
+    TrackSearchComponent,
+    HomeComponent,
+    AboutComponent,
+    ContractComponent,
+    LoginComponent,
+    ProtectedComponent,
+    ProductsComponent,
+    ProductComponent,
+    TrackComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [YouTubeSearchService, YouTubeServiceInjectables, ApiService],
   bootstrap: [AppComponent]
